@@ -1,0 +1,37 @@
+###### SERVER ######
+
+req.url == para definir a rota/URL de acesso à solicitação.
+req.method
+res.writeHead == para definir qualquer cabeçalho de resposta.
+res.write() == para enviar o conteúdo real para a resposta.
+res.end() == para finalizar a resposta.
+
+chamar o method  .listen()
+
+###### ESTRUTURA DE PASTAS ######
+
+\---vanilla-nodejs-rest-api
+|   app.js
+|   controller.js
+|   data.js
+|   utils.js
+
+No sub-folders exist
+
+###### CRIAR DADOS ######
+
+const todos = [
+    {
+        id: 1,
+        title: "Coding in Javascript",
+        description: "Working with functions in JavaScript",
+        completed: false,
+    }
+]
+
+###### CONTROLLER ######
+// metodos usados CRUD
+getTodo() == para obter e listar uma única tarefa por seu ID exclusivo.
+createTodo() == para criar uma nova tarefa temporária
+updateTodo() == para atualizar os valores de um todo existente.
+deleteTodo() == to remove a todo from the list.
